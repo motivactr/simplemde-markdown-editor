@@ -1449,11 +1449,6 @@ SimpleMDE.prototype.render = function(el) {
 	}
 
 	keyMaps["Enter"] = "newlineAndIndentContinueMarkdownList";
-	keyMaps["Tab"] = "tabAndIndentMarkdownList";
-	keyMaps["Shift-Tab"] = "shiftTabAndUnindentMarkdownList";
-	keyMaps["Esc"] = function(cm) {
-		if(cm.getOption("fullScreen")) toggleFullScreen(self);
-	};
 
 	document.addEventListener("keydown", function(e) {
 		e = e || window.event;
